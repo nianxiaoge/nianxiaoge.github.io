@@ -241,7 +241,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn">
-        
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#form-表单"><span class="post-toc-number">1.</span> <span class="post-toc-text">form(表单)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#说明"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">说明</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#属性"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">属性</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#应用场景"><span class="post-toc-number">2.</span> <span class="post-toc-text">应用场景</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#input-标签"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">input 标签</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#HTML-5-新增类型"><span class="post-toc-number">3.</span> <span class="post-toc-text">HTML 5 新增类型</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#post-和-get-方式的区别"><span class="post-toc-number">3.0.1.</span> <span class="post-toc-text">post 和 get 方式的区别</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#get-请求："><span class="post-toc-number">4.</span> <span class="post-toc-text">get 请求：</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#POST-请求"><span class="post-toc-number">5.</span> <span class="post-toc-text">POST 请求</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#radio-分组"><span class="post-toc-number">5.0.1.</span> <span class="post-toc-text">radio 分组</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#placeholder-属性的作用"><span class="post-toc-number">5.0.2.</span> <span class="post-toc-text">placeholder 属性的作用</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#type-hidden-隐藏域有什么作用？"><span class="post-toc-number">5.0.3.</span> <span class="post-toc-text">type = hidden 隐藏域有什么作用？</span></a></li></ol></li></ol></li></ol>
 
         <!--
         <li class="mdl-menu__item">
@@ -296,7 +296,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>xiaoge</strong>
-        <span>Mar 24, 2017</span>
+        <span>Mar 27, 2017</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -363,7 +363,96 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>test</p>
+        <h2 id="form-表单"><a href="#form-表单" class="headerlink" title="form(表单)"></a>form(表单)</h2><h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p> Form (表单)是页面与 WEB 服务器交互过程中最重要的信息来源。</p>
+<pre><code>&lt;form&gt;标签用于创建 HTML 表单。表单能够包含 input 元素，比如文本字段，复选框，单选框，提交按钮等。还可以包含 menus , textarea , fieldset 和 label 元素等。
+</code></pre><h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><p>action {URL} : 一个 URL 地址；指定 form 表单向何处发送数据。</p>
+<p>enctype {string} :规定在发送表单数据之前，如何对表单数据进行编码。</p>
+<p>method {get/post} :指定表单以何种方式发送到指定的页面。</p>
+<p>指定的值有：get ，form 表单里所填的值，附加在 action 指定的 URL后面，作为 URL 链接而传递。</p>
+<p>post ，form 表单里所填的值，附加在 HTML headers 上。</p>
+<h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><p>表单主要用于向服务器传输数据，登陆注册等。</p>
+<h3 id="input-标签"><a href="#input-标签" class="headerlink" title="input 标签"></a>input 标签</h3><p>input name 属性规定 input 元素的名称。</p>
+<p>name 属性用于对提交到服务器后的表单数据进行标识，或者在客户端通过 javascript 引用表单数据。</p>
+<p>只有设置了 name 属性的表单元素才能在提交表单时传递它们的值。</p>
+<p>text：默认。定义一个单行的文本字段。（默认宽度为20）</p>
+<p>password：定义密码字段。（字符会被遮盖）</p>
+<p>checkbox：复选框（checked属性：是否选中）</p>
+<p>radio：单选框（name属性：指定多个单选框的在一个区域里进行单选操作）</p>
+<p>button:定义普通按钮。常用于与JS一起启动脚本。（value属性：button按钮显示的文本）</p>
+<p>reset：定义重置按钮(清除文本区域内容，重置所有表单值为默认值)</p>
+<p>submit：定义提交按钮。</p>
+<p>hide：定义隐藏输入字段。（存放仅用于自己使用的信息）</p>
+<p>file：定义输入字段和 “浏览”按钮，供文件上传。</p>
+<p>image：定义图像形式的提交按钮。</p>
+<h2 id="HTML-5-新增类型"><a href="#HTML-5-新增类型" class="headerlink" title="HTML 5 新增类型"></a>HTML 5 新增类型</h2><p>email：在提交表单时会自动验证email的格式是否正确,格式不正确浏览器是不允许提交的。opera浏览器中必须有name属性，否则不起作用。</p>
+<pre><code>&lt;input type=&quot;email&quot; name=&quot;email&quot;&gt;
+</code></pre><p>url：在提交表单时会自动验证url的格式。Opera中会自动在开始处添加http://</p>
+<pre><code>&lt;input type=&quot;url&quot; /&gt;
+</code></pre><p>number：可以限制输入的数字，若未输入则会抛出一个错误。（step为上一个数字与下一个数字的间隔）</p>
+<pre><code>&lt;input type=&quot;number&quot; max=&quot;12&quot; min=&quot;0&quot; step=&quot;1&quot;/&gt;
+</code></pre><p>range：此类型将显示一个可拖动的滑块条，能够选择性的对限制范围内的数值进行设置。拖动时会反馈给value一个值.</p>
+<pre><code>&lt;input type=&quot;range&quot;  min=&quot;1&quot; max=&quot;10&quot; /&gt;
+</code></pre><p>search：此类型表示输入的将是一个搜索关键字。</p>
+<pre><code>&lt;input type=&quot;search&quot; /&gt;
+</code></pre><p>color： 此类型表单可让选择颜色值,并反馈到value中.</p>
+<pre><code>&lt;input type=&quot;color&quot;/&gt;
+</code></pre><p>telephone：此类型可输入一个电话号码。</p>
+<pre><code>&lt;input type=&quot;telephone&quot; /&gt;
+</code></pre><h4 id="post-和-get-方式的区别"><a href="#post-和-get-方式的区别" class="headerlink" title="post 和 get 方式的区别"></a>post 和 get 方式的区别</h4><p>查询字符串（名称/值对）是在 GET 请求的 URL 中发送的。</p>
+<h2 id="get-请求："><a href="#get-请求：" class="headerlink" title="get 请求："></a>get 请求：</h2><ol>
+<li><p>可以被缓存</p>
+</li>
+<li><p>保留在浏览器历史纪录里</p>
+</li>
+<li><p>可被收藏为书签</p>
+</li>
+<li><p>不加密</p>
+</li>
+<li><p>有长度限制</p>
+</li>
+<li><p>用于从服务器取回数据</p>
+</li>
+</ol>
+<h2 id="POST-请求"><a href="#POST-请求" class="headerlink" title="POST 请求"></a>POST 请求</h2><p>查询字符串（名称和值对）是在 POST 请求的 HTTP 消息主体中发送的：</p>
+<ol>
+<li><p>不会被缓存</p>
+</li>
+<li><p>不会保留在浏览器历史记录里</p>
+</li>
+<li><p>不能被收藏为书签</p>
+</li>
+<li><p>对数据长度没有要求</p>
+</li>
+<li><p>可以用于处理敏感数据</p>
+</li>
+<li><p>对数据类型没有限制</p>
+</li>
+</ol>
+<p>GET 产生一个 TCP 数据包；POST 产生两个 TCP 数据包。</p>
+<p>对于 GET 方式的请求，浏览器会把 HTTP header 和 data 一并发送出去，服务器响应 200 （返回数据）；</p>
+<p>对于 POST 请求，浏览器先发送 header ，服务器响应 100 continue ，浏览器再发送 data ，服务器<br>响应 200 ok (返回数据)；</p>
+<p>POST 需要两步。</p>
+<ol>
+<li><p>GET与POST都有自己的语义，不能随便混用。</p>
+</li>
+<li><p>在网络环境好的情况下，发一次包的时间和发两次包的时间差别基本可以无视。而在网络环境差的情况下，两次包的TCP在验证数据包完整性上，有非常大的优点。</p>
+</li>
+<li><p>并不是所有浏览器都会在POST中发送两次包，Firefox就只发送一次。</p>
+</li>
+</ol>
+<h4 id="radio-分组"><a href="#radio-分组" class="headerlink" title="radio 分组"></a>radio 分组</h4><p>name 属性相同的就是一组。</p>
+<h4 id="placeholder-属性的作用"><a href="#placeholder-属性的作用" class="headerlink" title="placeholder 属性的作用"></a>placeholder 属性的作用</h4><p>placehloder 属性能够让你在文本框里显示提示信息，一旦你在文本框里输入信息， placeholder就会隐藏。HTML 5 原生支持。</p>
+<h4 id="type-hidden-隐藏域有什么作用？"><a href="#type-hidden-隐藏域有什么作用？" class="headerlink" title="type = hidden 隐藏域有什么作用？"></a>type = hidden 隐藏域有什么作用？</h4><p>input type = hidden 作用是用了储存一些表单消息，却不想要直接显示在表单上，例如一些特定的参数等。 </p>
+<p>value 也会传递给后端，每一个表单可以赋予不同名称的隐藏域，传递各种表单消息。</p>
+<p>基本语法： </p>
+<pre><code>&lt;input type=&quot;hidden&quot; name=&quot;隐藏域名称&quot; value = &quot;&quot;&gt;
+</code></pre><p>type=”hidden” 就是说明这是一个隐藏域，一般还有 name 和 value 两个参数。</p>
+<pre><code>&lt;form action = &quot;index.html&quot; method = &quot;post&quot;&gt;
+&lt;input type=&quot;hidden&quot; name = &quot;age&quot; value = &quot;23&quot;&gt;
+&lt;input type=&quot;submit&quot; name = &quot;send&quot; value = &quot;送出表单&quot;&gt;
+&lt;/form&gt;
+</code></pre><p>效果图：</p>
+<p><img src="https://ooo.0o0.ooo/2017/03/27/58d884db34337.png" alt="type=&quot;hidden&quot;"></p>
 
     
 
