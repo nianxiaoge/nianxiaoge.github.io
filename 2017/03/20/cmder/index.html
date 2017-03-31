@@ -10,7 +10,7 @@
     
     <title>
         
-            Archives: 2017/3 | 
+            Windows 命令行工具 | 
         
         手艺人
     </title>
@@ -28,7 +28,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="xiaoge">
     <meta name="description" content="日子是一天一天过的，积累的多了，就是一生。">
-    <meta name="keywords" content="front-end">
+    <meta name="keywords" content="front-end,Software">
 
     <!--iOS -->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -49,9 +49,9 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://acraft.in">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Archives: 2017/3 | 手艺人">
+    <meta property="og:title" content="Windows 命令行工具 | 手艺人">
     <meta property="og:description" content="日子是一天一天过的，积累的多了，就是一生。">
-    
+    <meta property="og:article:tag" content="Software"> 
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" href="/css/ie-blocker.css">
@@ -218,209 +218,214 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
     
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
 
-    <!-- Normal Post -->
-    
-        
-        
-            <!-- Paradox Thumbnail -->
-            <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#windows-下命令行工具-Cmder"><span class="post-toc-number">1.</span> <span class="post-toc-text">windows 下命令行工具 Cmder</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#cmder-安装使用"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">cmder 安装使用</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#cmder-配置"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">cmder 配置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#以管理员身份运行"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">以管理员身份运行</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#设置"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">设置</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#一些快捷键"><span class="post-toc-number">1.2.3.</span> <span class="post-toc-text">一些快捷键</span></a></li></ol></li></ol></li></ol>
+
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script>
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/03/20/cmder/">Windows 命令行工具</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/03/20/cmder/" target="_self">Continue Reading</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/i.jpg" width="44px" height="44px" alt="xiaoge's avatar">
-            </div>
-            <div>
-                <strong>xiaoge</strong>
-                <span>Mar 20, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                <a class="post_category-link" href="/categories/Tools/">Tools</a>
-            </span>
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-        
-        
-        
-    
-        
-        
-            <!-- Paradox Thumbnail -->
-            <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/03/10/How-To-Ask/">提问的智慧</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            前言
-  在某乎时间线上出现的一个回答，答题的是一个前端方面的牛人。问题是这样的“很多IT大牛在我这...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/03/10/How-To-Ask/" target="_self">Continue Reading</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/i.jpg" width="44px" height="44px" alt="xiaoge's avatar">
-            </div>
-            <div>
-                <strong>xiaoge</strong>
-                <span>Mar 10, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                <a class="post_category-link" href="/categories/growth/">growth</a>
-            </span>
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-        
-        
-        
-    
-        
-        
-            <!-- Paradox Thumbnail -->
-            <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/03/01/vscode/">Visual Studio Code配置</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            仅限于windows系统
-**快捷键**...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/03/01/vscode/" target="_self">Continue Reading</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/i.jpg" width="44px" height="44px" alt="xiaoge's avatar">
-            </div>
-            <div>
-                <strong>xiaoge</strong>
-                <span>Mar 01, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                <a class="post_category-link" href="/categories/editor/">editor</a>
-            </span>
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-        
-        
-        
-    
-
-    
-
-    
-        <script>
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').css('background-image', 'url(' + '/img/random/material-' + randomNum + '.png' + ')')
-
-        locatePost = locatePost.next();
-    }
+    $('.post_thumbnail-random').css('background-image', 'url(' + '/img/random/material-' + randomNum + '.png' + ')');
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                Windows 命令行工具
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/i.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>xiaoge</strong>
+        <span>Mar 20, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/Software/">Software</a>
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+
+    <!-- Share Twitter -->
+    
+
+    <!-- Share Facebook -->
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h2 id="windows-下命令行工具-Cmder"><a href="#windows-下命令行工具-Cmder" class="headerlink" title="windows 下命令行工具 Cmder"></a>windows 下命令行工具 Cmder</h2><p>如果不做开发的话，在 windows 下用命令行的地方很少，偶尔也就是 ping 个网络而已。复杂的功能自带的 cmd 并不能实现，包括 powershell 。</p>
+<p>而且它们都不好看（感觉这个才是重点）。</p>
+<p>这个 <a href="http://cmder.net/" target="_blank" rel="external">cmder</a> 也是在网络上发现的，功能很强大的命令行工具。Windows环境下非常简洁美观易用的cmd替代者，</p>
+<p><a href="http://cmder.net/" target="_blank" rel="external">cmder</a> 是官网。下载选项有两个，一个是 Download mini, 一个是 Download full。</p>
+<p><img src="https://ooo.0o0.ooo/2017/03/31/58dde4eb956e5.png" alt="download"></p>
+<p>mini portable 版，沒有内置 msysgit 工具。</p>
+<p>full 也是 portable 版，不过功能就强大多了。自带了 msysgit, 除了这个命令之外, 它支持了很多Linux命令。</p>
+<h3 id="cmder-安装使用"><a href="#cmder-安装使用" class="headerlink" title="cmder 安装使用"></a>cmder 安装使用</h3><p>因为我的笔记本上已经装了 git, 所以下载了 mini 版，这里也仅介绍 mini 版。</p>
+<p>解压缩到某个文件夹（我选择的是C:\Program Files (x86)），然后在系统变量里的 Path ，把 cmder 所在的路径添加进去就好了。</p>
+<p>然后 win + r 输入 cmder ,就可以打开了。</p>
+<h3 id="cmder-配置"><a href="#cmder-配置" class="headerlink" title="cmder 配置"></a>cmder 配置</h3><p>windows 下的 cmd 可以在任意目录下按住 shift 键，同时鼠标右键呼出 cmd 窗口。<br>如果我们也想在任意目录下打开 cmder 的话，可以<br>先以管理员权限打开 cmd ,输入 Cmder.exe  /REGISTER All 回车。此时 cmder 已经加到系统右键菜单了。</p>
+<h4 id="以管理员身份运行"><a href="#以管理员身份运行" class="headerlink" title="以管理员身份运行"></a>以管理员身份运行</h4><p>打开 cmder, Ctrl + t 的快捷键，勾选上下面的<br>Run as administrator。</p>
+<p><img src="https://ooo.0o0.ooo/2017/03/31/58dde5c2435aa.png" alt="administrator"></p>
+<h4 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h4><p>可以 win + alt + p 快捷键呼出 cmder 的设置界面，也可以在顶部或者底部鼠标右键就看到 settings 了。</p>
+<p><img src="https://ooo.0o0.ooo/2017/03/31/58dde6b89ddd5.png" alt="settings"></p>
+<p>设置里面有相当多的项，可定制化非常高。</p>
+<h4 id="一些快捷键"><a href="#一些快捷键" class="headerlink" title="一些快捷键"></a>一些快捷键</h4><p><img src="https://ooo.0o0.ooo/2017/03/31/58dde5255ce15.png" alt="keyshortcuts"></p>
+<p>我用的字体是 <a href="https://be5invis.github.io/Iosevka/inziu.html" target="_blank" rel="external">Inziu</a></p>
+
+    
+
     
 </div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+
+
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2017/03/10/How-To-Ask/" id="post_nav-older" class="next-content">
+            Older
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
